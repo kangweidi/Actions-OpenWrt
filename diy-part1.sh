@@ -16,3 +16,9 @@
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 添加 kenzok8 的 small 仓库 (包含 Passwall, ddns-go, caddy 等大量插件)
+# echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
+# 或者是使用下面这两个（更稳定一些）：
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >> feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >> feeds.conf.default
